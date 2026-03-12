@@ -1,0 +1,68 @@
+.app-header {
+  background: white;
+  border-bottom: 1px solid #e1e5e9;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  height: 64px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #666;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-toggle:hover {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.menu-toggle:active {
+  background-color: #e1e5e9;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.brand-logo {
+  flex-shrink: 0;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .app-header {
+    padding: 0 0.75rem;
+  }
+  
+  .brand-title {
+    font-size: 1.25rem;
+  }
+}
