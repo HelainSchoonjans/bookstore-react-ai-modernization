@@ -1,0 +1,72 @@
+.loading-spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #667eea;
+}
+
+.loading-spinner-small {
+  font-size: 14px;
+}
+
+.loading-spinner-medium {
+  font-size: 16px;
+}
+
+.loading-spinner-large {
+  font-size: 18px;
+}
+
+.spinner-icon {
+  animation: spin 1s linear infinite;
+}
+
+.spinner-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.loading-spinner-small .spinner-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.loading-spinner-large .spinner-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.loading-text {
+  font-weight: 500;
+  color: #6b7280;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Inline loading spinner for buttons */
+.loading-spinner-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: currentColor;
+}
+
+.loading-spinner-inline .spinner-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.loading-spinner-inline .loading-text {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
